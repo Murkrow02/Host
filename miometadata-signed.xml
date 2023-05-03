@@ -69,12 +69,12 @@ Y0o6a1JUoGGaESxzGMiPfADLEe5fbDXc/8ZxrAfl+A0O2PNUu8X6
 </ds:X509Data>
 </ds:KeyInfo>
 </ds:Signature>
-<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:nameid-format:transient">
-<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:nameid-format:transient:bindings:HTTP-Redirect" Location="https://localhost/spid/logout"/>
+<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://localhost/spid/logout"/>
 <md:NameIDFormat>
 urn:oasis:names:tc:SAML:2.0:nameid-format:transient
 </md:NameIDFormat>
-<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:nameid-format:transient:bindings:HTTP-POST" Location="https://localhost/spid/acs" index="0" isDefault="true"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost/spid/acs" index="0" isDefault="true"/>
 <md:AttributeConsumingService index="0">
 <md:ServiceName xml:lang="en">SPID service name</md:ServiceName>
 <md:RequestedAttribute Name="spidCode"/>
