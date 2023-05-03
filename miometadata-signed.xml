@@ -71,9 +71,7 @@ Y0o6a1JUoGGaESxzGMiPfADLEe5fbDXc/8ZxrAfl+A0O2PNUu8X6
 </ds:Signature>
 <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
 <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://localhost/spid/logout"/>
-<md:NameIDFormat>
-urn:oasis:names:tc:SAML:2.0:nameid-format:transient
-</md:NameIDFormat>
+<md:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient">name_id_value</saml:NameID>
 <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost/spid/acs" index="0" isDefault="true"/>
 <md:AttributeConsumingService index="0">
 <md:ServiceName xml:lang="en">SPID service name</md:ServiceName>
