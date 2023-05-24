@@ -1,80 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:spid="https://spid.gov.it/saml-extensions" ID="pfx3eb5ea8e-9d3d-50cc-d5e4-cb5d6dd07f4a" entityID="https://laravel-test"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-<ds:SignedInfo>
-<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
-<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-<ds:Reference URI="">
-<ds:Transforms>
-<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
-</ds:Transforms>
-<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>J1pDOC81AhmZVSE3BsEsFtjEk4agHceSKv+uce+nwT4=</ds:DigestValue>
-</ds:Reference>
-</ds:SignedInfo>
-<ds:SignatureValue>
-uINGQJTG6vu5ZkTUv5OSBxFeJirgsZosqzHxexYRdS2zE1QPgJiP1Zux1U5LXx1hHk0rm3Ya+bW3
-j1hQjhNVlst5XSPkNoHM5eY6Xyz9Is9EFFAk2cM3mtZp6DeDL5iLHH9knD94udkrPV4yKVzOFz1a
-rat/HxCdGwX7smK4P+tK2ZNOn2id1cHuwel9OMyXYKdBn5xckNu5zxSDzLyzOCJ91w70AzoV8Z+3
-PwqXc6IOEMdI4Nw+k8pY0S9XfAB+nnJTOdCMznVLjTVa4bQztHN0oNzpwM4yAboxADsDKGahId1A
-PCB96yo4FbWNeMltpVP+tYQbQSJzXIL0tFrCiOJKs5QSV8lV3LcoCtdxGim+cT5kOoRwbkMYJxiZ
-+NuhPvcZgZJv3QmZMWT4Iu1DfVY5rPtcR/raYQNTQ7uSeuF3IJYLkMc/E3/R7nD1Cs3dz+aoJLh5
-ye/j4VD3zx9qHeubJBh+PJUSFjpWRKCQpgGj0GrSQBN6FfKd/T4CXWqF
-</ds:SignatureValue>
-<ds:KeyInfo>
-<ds:KeyValue>
-<ds:RSAKeyValue>
-<ds:Modulus>
-zbHz/HiXnr6fwppYh46JoF+TAgbyecPKSC9nm360o1lfu+Klvmg3Vi/QM6gVKdtvSgItU7jdAUDC
-IPDZ/Edze+4Srccs6Kn+rTs7mt57Gg7dJghKhWt1mu8ODnxIut9NWzRvu/C/TQDG4P3EFlf9c0VL
-j7gsR+lv8uxPNQn5/7GN1POMNQ0sNe2UqfMrpOhWc3zJBlVqMM1pMH6/xkIG0dzDp4nkjlaJLy1f
-F958OJK/u/3/mb+yrQPdFv123W4AhC1nQ7VeL7fTgppx9zKX2T5CizgHDSv1sGveUIXMU0EDEvy3
-4dgFFMRvC7S1KNN3myrKRzBwD/vVkEqe0vQ1d2bVBene4wV4Ccp3U5kxSntkR3DcNRwI6WZRn+2E
-I8I7e+W56zOgSFrh6qdn2v/S/6y0B6HoxBmVeScFm/gHJ4ot0SJMO3yCkdXkcb8DabowuiByFl0m
-qzXXV8rUx+/1iLQSvVETpKk0FLXLMrhh5TypUNAnMlvh5+eEsrVbgozn
-</ds:Modulus>
-<ds:Exponent>AQAB</ds:Exponent>
-</ds:RSAKeyValue>
-</ds:KeyValue>
-<ds:X509Data>
-<ds:X509Certificate>
-MIIGJjCCBI6gAwIBAgIUENy0VkUUm3dlU+H6V7Ll6g5CeNowDQYJKoZIhvcNAQELBQAwgYoxJDAi
-BgNVBAoMG0EgQ29tcGFueSBNYWtpbmcgRXZlcnl0aGluZzEQMA4GA1UEAwwHQS5DLk0uRTEdMBsG
-A1UEUwwUaHR0cHM6Ly9zcGlkLmFjbWUuaXQxFTATBgNVBGEMDFBBOklULWNfaDUwMTELMAkGA1UE
-BhMCSVQxDTALBgNVBAcMBFJvbWEwHhcNMjMwNDIxMTkyMTI3WhcNMjQwNDIwMTkyMTI3WjCBijEk
-MCIGA1UECgwbQSBDb21wYW55IE1ha2luZyBFdmVyeXRoaW5nMRAwDgYDVQQDDAdBLkMuTS5FMR0w
-GwYDVQRTDBRodHRwczovL3NwaWQuYWNtZS5pdDEVMBMGA1UEYQwMUEE6SVQtY19oNTAxMQswCQYD
-VQQGEwJJVDENMAsGA1UEBwwEUm9tYTCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAM2x
-8/x4l56+n8KaWIeOiaBfkwIG8nnDykgvZ5t+tKNZX7vipb5oN1Yv0DOoFSnbb0oCLVO43QFAwiDw
-2fxHc3vuEq3HLOip/q07O5reexoO3SYISoVrdZrvDg58SLrfTVs0b7vwv00AxuD9xBZX/XNFS4+4
-LEfpb/LsTzUJ+f+xjdTzjDUNLDXtlKnzK6ToVnN8yQZVajDNaTB+v8ZCBtHcw6eJ5I5WiS8tXxfe
-fDiSv7v9/5m/sq0D3Rb9dt1uAIQtZ0O1Xi+304Kacfcyl9k+Qos4Bw0r9bBr3lCFzFNBAxL8t+HY
-BRTEbwu0tSjTd5sqykcwcA/71ZBKntL0NXdm1QXp3uMFeAnKd1OZMUp7ZEdw3DUcCOlmUZ/thCPC
-O3vlueszoEha4eqnZ9r/0v+stAeh6MQZlXknBZv4ByeKLdEiTDt8gpHV5HG/A2m6MLogchZdJqs1
-11fK1Mfv9Yi0Er1RE6SpNBS1yzK4YeU8qVDQJzJb4efnhLK1W4KM5wIDAQABo4IBgDCCAXwwCQYD
-VR0TBAIwADAOBgNVHQ8BAf8EBAMCBsAwcwYDVR0gBGwwajAfBgMrTBAwGDAWBggrBgEFBQcCAjAK
-DAhBZ0lEcm9vdDAgBgQrTBAGMBgwFgYIKwYBBQUHAgIwCgwIYWdJRGNlcnQwJQYGK0wQBAIBMBsw
-GQYIKwYBBQUHAgIwDQwLY2VydF9TUF9QdWIwHQYDVR0OBBYEFAK3t2lTfFJGM4WYu6W28g0mUXxm
-MIHKBgNVHSMEgcIwgb+AFAK3t2lTfFJGM4WYu6W28g0mUXxmoYGQpIGNMIGKMSQwIgYDVQQKDBtB
-IENvbXBhbnkgTWFraW5nIEV2ZXJ5dGhpbmcxEDAOBgNVBAMMB0EuQy5NLkUxHTAbBgNVBFMMFGh0
-dHBzOi8vc3BpZC5hY21lLml0MRUwEwYDVQRhDAxQQTpJVC1jX2g1MDExCzAJBgNVBAYTAklUMQ0w
-CwYDVQQHDARSb21hghQQ3LRWRRSbd2VT4fpXsuXqDkJ42jANBgkqhkiG9w0BAQsFAAOCAYEAbnhs
-w7g5g8v3+bxBBxEfhlXjpiLVap8uf8Aw/W/u9bWTbiFRO6ARVqsUd0WIWnFfMhcBQhADvfBWcqfP
-gBRCYek0a+jmrm/fqlAA8x6OlRjjTf21w/RA/CN+q+PJaQ40xDKAv/7yxqIIR56B9V4tyy5vRf7X
-sTUic/+ldDd6LVlyHovBNoydaTFbonGTodFEqMYifo7DgGAfcudOtn8aBXEHaXR9IxtBJ3hxqW4k
-LC9Ymj3GpbOQ35bY5LpPwaYMdeOf5PErSp09kqLI6T6b6WpQDVYnJZTwTM+m/JADCEJgxt92sETN
-UaKmKsfEw5vm+knTZpuYfCWiLUPA0Xi9fhPAfTDPEm54Jk5NJtinfBGZpA6toMX43IcJ/K03kxFz
-Od3DbCPJSWujb23vEUljLPk+/GPj6YsteTjgCzOkivBmI7cic+bYb00X9jilmfaRUl8Jl5GZrOvo
-Y0o6a1JUoGGaESxzGMiPfADLEe5fbDXc/8ZxrAfl+A0O2PNUu8X6
-</ds:X509Certificate>
-</ds:X509Data>
-</ds:KeyInfo>
-</ds:Signature>
-<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://localhost/spid/logout"/>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" 
+xmlns:spid="https://spid.gov.it/saml-extensions" 
+entityID="https://laravel-test" 
+ID="pfx3eb5ea8e-9d3d-50cc-d5e4-cb5d6dd07f4a">
+<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" 
+protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:SingleLogoutService 
+Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" 
+Location="https://localhost/spid/logout"/>
 <md:NameIDFormat>
 urn:oasis:names:tc:SAML:2.0:nameid-format:transient
 </md:NameIDFormat>
-<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost/spid/acs" index="0" isDefault="true"/>
+<md:AssertionConsumerService 
+Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
+Location="https://localhost/spid/acs" isDefault="true" index="0"/>
 <md:AttributeConsumingService index="0">
 <md:ServiceName xml:lang="en">SPID service name</md:ServiceName>
 <md:RequestedAttribute Name="spidCode"/>
