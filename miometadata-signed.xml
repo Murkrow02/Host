@@ -1,18 +1,80 @@
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" 
-xmlns:spid="https://spid.gov.it/saml-extensions" 
-entityID="https://laravel-test" 
-ID="pfx3eb5ea8e-9d3d-50cc-d5e4-cb5d6dd07f4a">
-<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" 
-protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-<md:SingleLogoutService 
-Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" 
-Location="https://localhost/spid/logout"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:spid="https://spid.gov.it/saml-extensions" ID="pfx3eb5ea8e-9d3d-50cc-d5e4-cb5d6dd07f4a" entityID="https://laravel-test"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>J1pDOC81AhmZVSE3BsEsFtjEk4agHceSKv+uce+nwT4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+UCQuFw8YPyt8/J1mgoLirZG1c4xZ/3QCJWzI76M5tDmd6a/b8PAktj0n1RjRp2V+dq19Nm5pjlD1
+FnDZrk8dAleHmrKleT6FVpiPdDb/CMZQ2w/sotwVVqR5CtXIsV2YIOQtl7cuOG8oFHSZMUl1XFiI
+/QpR+mqOSsk2fF268QucqV82UW0wMLF/2CIxwkHPJk5tUKE2UcRFPqjAXZKpbtEycQK0Ai3fNPPL
+NP2v7qEsk+VYNgzLg5S3T4zp/KHyvkWZzQy41c857g2Tth3wrSzBwvLWSEYWC3fci40cmx+xDU+Z
+edrfukksFo45118Rd8aMMxbtABunUgSodXVERdvvqzD0UuBms0Houj1dakjJtiMk6c+FGKh+er6i
+duNO8AOSdfXw3dtXdvZ/S1tMmNcXwLIyDpsefsEAUWS3PNgZJZyU7XusfpJh2tNaJ6mmz3hTkfM1
+ITRvLt76i7ZrcUP2oBjsX+6bka0vpZAyZLQ1Ai9U9INSIdIHpkmjz0vJ
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+kutKm9Ty2ghIzo0cICZKvp89XdToS6hPb2HN9fLeOUa3QsjAka+x0M4ma87qOC11ZX5PxqEIhJlH
+CVhvur1vQTYBPDd5JbjVvGF4LOh+5vc7lGolh1n5qBY5ku2gCpcu+VHQGm7WC9OtPDsicO0UWvAY
+GY4wtAQ29GnH9fFa7fbWm3IGT76iXi7Vt48vQI5c6Z0xvk/l0RFBTi1s43bszpT7G1EdljYcL38k
+Cc06Q+q7+X8OFFUouHdpZFV4/x6F/cpGevTITIfUOy4OPiLOS0QFgE1FC1znSLLHNkzvm/SoTfNf
+WsSTPiSbR1SGgIRCv5qIWpNwuaCT3QfGndZbIN5zQgGyRlAnftu3wXiln1oZ6CXGTkU0ex+O6BH2
+HrQOuYQ7/bdvk4NxZFFjP3bT+W3IlQ8/z4shmzTVAvarFzqtyAXYnBW4HRf/PrAq8ERnNS2jzFH2
+0vCM5MxEZPyD+xnGIaLqEVORD+GiWhA+67rqmcUhwUS0rz5eKnjsp575
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+<ds:X509Data>
+<ds:X509Certificate>
+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
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature>
+<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://localhost/spid/logout"/>
 <md:NameIDFormat>
 urn:oasis:names:tc:SAML:2.0:nameid-format:transient
 </md:NameIDFormat>
-<md:AssertionConsumerService 
-Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
-Location="https://localhost/spid/acs" isDefault="true" index="0"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost/spid/acs" index="0" isDefault="true"/>
 <md:AttributeConsumingService index="0">
 <md:ServiceName xml:lang="en">SPID service name</md:ServiceName>
 <md:RequestedAttribute Name="spidCode"/>
